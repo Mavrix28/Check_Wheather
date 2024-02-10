@@ -2,156 +2,130 @@
     margin: 0;
     padding: 0 ;
 }
-
-.card{
-    height: 90vh;
-    width: 60vh;
-    padding: 3vh  2vh;
-    background:linear-gradient( 55deg,rgb(74, 74, 176),rgb(168, 182, 185));
-    border: 2px solid black;
+body{
+    background-image: url('https://media1.thehungryjpeg.com/thumbs2/ori_3634859_4nykqk95a8yzj379cfbjdvcpgc5z3l23wkirm0dj_starry-night-sky-cartoon-background-vector-illustration.jpg');
+    background-size: cover;
+}
+.navigation{
     display: flex;
+    width: 100%;
+    padding: 8px;
+}
+.brand{
+    width: 18%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    border-radius: 20px;
-    margin-left: 35%;
-    margin-top: 25px;
-    margin-top: 5px;
-}
-
-.search{
-    height: 5vh;
-    width: 90%;
-    border: 1px solid black;
-    display: block;
-    text-align: center;
-    padding:1vh 2vh;
-    border-radius: 10px;
-    background: transparent;
-    font-size: 5vh;
-}
-
-.search input{
-    height: 5vh;
-    width: 70%;
-    border-radius: 40px;
-    border: none;
-    text-align: center;
-    position: relative;
-    bottom: 20px;
     font-size: large;
-   
 }
-
-.search button{
-    height: 5vh;
-    width: 5vh;
-    border: none;
-    background-color: white;
-    border-radius: 50%;
-    margin-left: 20px;
-    background: transparent;
+.brand span i{
+    font-size: 36px;
+    margin: 0 8px;
 }
-
-.search button img{
-    height: 6vh;
-    width: 6vh;
-    mix-blend-mode: color-burn;
+.brand h3{
+    user-select: none;
+    color: white;
+}
+.navigation nav{
+    width: 70%;
+    display: flex;
+    padding: 12px;
+}
+.navigation nav ul{
+    display: flex;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation nav ul li{
+    list-style: none;
     cursor: pointer;
 }
-
-.sbtn:hover{
-    filter: drop-shadow(3px 1px 2px #01190c);
+.navigation nav ul li i{
+    color: white;
+    font-size: 18px;
 }
-
-.weather{
-    height: 80%;
-    width: 80%;
-    background:transparent ;
-    border: 2px solid black;
-    position: absolute;
-    bottom: 35px;
-    text-align: center;
-    border-radius: 20px;
-}
-
-.weather-icon {
-    font-size: 12rem;
-    margin-top: 50px;
-}
-
-.detail{
-    height: 30vh;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.nav-right{
+    width: 90%;
     display: flex;
-    gap: 1vh;
-    font-weight: 500;
-    /* padding: 2vh ; */
+    align-items: center;
+    justify-content: end;
 }
-
-.col {
-    height: 50vh;
-    width: 50vh;
-    position: relative;
-    top:5vh;
-    font-size: 5vh;
-    display: block;
+.input-box{
+    border: 1px solid black;
+    margin: 0 8px;
+    padding: 0 12px;
+    background-color: white;
+    border-radius: 2px;
 }
-
-.col img{
-    height: 10vh;
-    width: 10vh;
-    mix-blend-mode: color-burn;
-    
+.border-none, .border-none i{
+    border: 0;
+    background: none;
+    cursor: pointer;
 }
-
-.current-wh{
-    height: 50vh;
-    width: 50vh;
-    font-size: 6vh;
+.nav-right input[type=text]{
+    padding: 4px;
+    width: 240px;
+    height: 22px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
 }
-.current-wh img{
-  height: 15vh;
-  width: 20vh;
-   object-fit: contain;
-   mix-blend-mode: color-burn;
+.nav-right input[type=submit]{
+    width: 80px;
+    margin: 0 12px;
+    height: 34px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 2px;
+    padding: 4px;
+    cursor: pointer;
 }
-
-@media screen and (max-width:600px) {
-
-    body{
-        overflow-y: hidden;
-        overflow-x: hidden;
-        padding-top: 1vh;
-    }
-    .card{
-       height: 90vh;
-       width: 90%;
-      position: absolute; 
-      right: 2px;
-    }
-    .current-wh{
-        height: 50vh;
-        width: 40vh;
-        font-size: 4vh;
-        text-align: center;
-    }
-    .col {
-        height: 50vh;
-        width: 50vh;
-        position: relative;
-        top:5vh;
-        font-size: 3vh;
-        display: block;
-    }
-    
-    .col img{
-        height: 10vh;
-        width: 10vh;
-        mix-blend-mode: color-burn;
-        
-    }
-    
-} 
-
+.city-sec{
+    margin: 60px auto;
+    padding: 18px;
+    color: white;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 96%;
+    border-radius: 4px;
+    height: 54vh;
+}
+.crad-list-main{
+    width: 100%;
+    padding: 18px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.crad-list-main::-webkit-scrollbar{
+    width: 0;
+}
+.card{
+    min-width: 260px;
+    border-radius: 4px;
+    background: white;
+    min-height: 280px;
+    margin: 0 28px;
+}
+.card-image{
+    width: 100%;
+    height: 50%;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+.city-name{
+    padding: 8px 18px;
+}
+.city-name h4{
+    color: black;
+}
+.weather-data-table{
+    color: black;
+    width: 100%;
+    font-size: 12px;
+}

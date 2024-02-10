@@ -9,39 +9,655 @@
     <title>Weather</title>
 </head>
 <body style="overflow: hidden;">
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter Your City" spellcheck="false"/>
-            <button class="sbtn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAhVJREFUaEPtmUtygzAMhi1WTS9VcrI2Jyu9VNMVauWaDA/ZwpYcYAZvSDJg9Em/ZNkBd/ABB7ffnQBbR7AoAi/OtU3TtIj4FgDacO3oCgBffd93P8757zVHFgAZDgDvzrnBYNE2ALh99/2HeGPhDasASgwf21MTQgQIxn8WOmjyGCJerWWVBBCM7watk5Vk2GvTeKmE3GBlZg2RBLgAIOP5DhFvkidTsrOEiAKQNxGREvYxSrTMzfNXBLo74tVCliyAlfGDgdx8VlFgARjpqD12AaBCMM4L9Zx+zZmHkUtcC2/VmncBwITbxFPkqHkUSnJq7vAFQI2XJHJB7ZynAjAyqgIwqf13RHG1XlsOuTzQzs9FYAJgkcBjwHmFqwEwKXeWANx6UB3AolI8NYkPX0ZrLTi15o21EubL
-                PtNKOK3+2VaCfuS8pckF6+Zw0iHHajjnsRKImsZHIxCLQoBVb2gspDM4Xr2lpIno1IFkR59Hxy2xkwu/FbU6qRDbBMtNPe3ExnuCEkmK3WgsJyJbw7VtkJed1+z/xmYyNCBiBMZvKoBY5AtXHAJY0QFYFsAAozlaTEmyJBJFAGt1k1OiH1Ul8yhyEwCpMOREYhMA8raUT2shNgOwgtgUwAJicwAtxC4AJIhUPuwGIAYhJfOuAOYQkvHJdlq7WGmeH/4oWdOx7i4CueAnQK7HrO8/I2Dt0dz5Dh+BX7amjkDdVuU4AAAAAElFTkSuQmCC"/></button>
+<!-- simple navigation panel -->
+    <div class="navigation">
+        <div class="brand">
+            <span><i class="fa-solid fa-sun" style="color: #FFD43B;"></i></span> <h3>Accu Weather</h3>
         </div>
-        <div class="weather">
-            <div class="current-wh">
-                  <img  class="weather-icon" src="https://cdn-icons-png.flaticon.com/512/7133/7133364.png"/>
-                   <h1 class="temp">22°C</h1>
-                   <h2 class="city">India</h2>
-            </div>
-            <div class="detail">
-                <div class="col">
-                    <img src="https://static-00.iconduck.com/assets.00/humidity-icon-512x419-5m7ztixz.png"/>
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
+        <nav>
+            <ul>
+                <li tittle = "Home"><i class="fa-solid fa-house"></i></li>
+            </ul>
+            <div class="nav-right">
+                <div class="input-box">
+                    <input type="text" id="textSearchCity" name="city">
+                    <button title="location" class="border-none"><i class="fa-solid fa-location-dot"></i></button>
                 </div>
-
-                <div class="col">
-                    <img src="https://cdn-icons-png.flaticon.com/512/54/54298.png"/>
-                    <div>
-                        <p class="wind">50%</p>
-                        <p>Wind</p>
-                    </div>
-                </div>
+                <input type="submit" value="Search">
             </div>
-        </div>
+        </nav>
     </div>
-
+    <section class="city-sec">
+        <div class="cards">
+            <div class="card-list">
+                <!-- home section to show popular city's data -->
+                <div class="card-list-poppular">
+                    <h4>Poppular City's weather</h4>
+                </div>
+                <!-- card list with overflow scroll at x-axis -->
+                <div class="crad-list-main">
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                    <!-- Card Single -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="image acc weather">
+                        </div>
+                        <div class="city-name">
+                            <h4>Delhi</h4>
+                        </div>
+                        <div class="weather-data-table">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                        <th>Winds</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- card single end -->
+                </div>
+            </div>
+        </div>
+    </section>
 <script src="app.js"></script>
-   
+<script src="https://kit.fontawesome.com/7a81e15f39.js" crossorigin="anonymous"></script>
+<script src="./placeholderChanger.js"></script>
 </body>
 </html>
